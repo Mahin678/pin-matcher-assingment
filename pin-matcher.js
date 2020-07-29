@@ -12,6 +12,7 @@ generateBtn.addEventListener("click", function(){
      document.getElementById("match").style.display="none";
      document.getElementById("try-Left").innerText='try left';
      document.getElementById("try").style.display="inline";
+     document.getElementById("not-Match").style.display="none";
 })
 
 //number submit btn 
