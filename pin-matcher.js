@@ -18,9 +18,9 @@ generateBtn.addEventListener("click", function(){
      document.getElementById("clearBtn").style.color="white"; 
 })
 //number submit btn 
-function submitValue(num){
+function submitValue(number){
      const numberValue = document.getElementById("submit-input").value;
-     const numberValueAdd = numberValue + num;
+     const numberValueAdd = numberValue + number;
      const submitValue = document.getElementById("submit-input").value=numberValueAdd;
      return submitValue;
 } 
