@@ -13,6 +13,8 @@ generateBtn.addEventListener("click", function(){
      document.getElementById("try-Left").innerText='try left';
      document.getElementById("try").style.display="inline";
      document.getElementById("not-Match").style.display="none";
+     document.getElementById("submit-Btn").style.display="inline";
+     document.getElementById("clearBtn").style.color="white"; 
 })
 
 //number submit btn 
@@ -65,6 +67,7 @@ const clearBtn = document.getElementById("clearBtn");
      document.getElementById("submit-Btn").style.color="white";
      document.getElementById("submit-Btn").disabled = false;        
      document.getElementById("clearBtn").style.backgroundColor= "#425062";
+
 }
  )
  //remove last char 
@@ -92,8 +95,9 @@ function checkTry(){
     let  totalChance = getTryText-1  ;
    let totalChanceValue =  document.getElementById("try").innerText= totalChance ;
    if(totalChance == 0){
+     document.getElementById("clearBtn").disabled = true;      
+     document.getElementById("clearBtn").style.color="red"; 
 document.getElementById("try").innerText= 'Start again , click generate Button' + ", " + totalChanceValue;
  document.getElementById("submit-Btn").disabled = true;
- document.getElementById("submit-Btn").style.color="red";
-
+ document.getElementById("submit-Btn").style.display="none";
 }}
