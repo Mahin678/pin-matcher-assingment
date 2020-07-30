@@ -38,7 +38,6 @@ function submitValue(number){
          }
      else if ( getSubmitInput > 10000 ||  getSubmitInput < 1000 ){
           document.getElementById("try-Left").innerText='Write  4 Number  ';
-          document.getElementById("submit-Btn").style.color="red";
           document.getElementById("try").style.display="none";
           document.getElementById("submit-Btn").disabled = true;    
           document.getElementById("clearBtn").style.backgroundColor= "grey";
@@ -99,8 +98,7 @@ function checkTry(){
 
    if(totalChance == 0){
      document.getElementById("clearBtn").disabled = true;      
-     document.getElementById("clearBtn").style.color="red"; 
-     document.getElementById("try").innerText= 'You are lost , Click Generate Button' + ", " + totalChanceValue;
+     document.getElementById("try").innerText= 'Start Again, Click Generate Button' + ", " + totalChanceValue;
      document.getElementById("submit-Btn").disabled = true;
      document.getElementById("submit-Btn").style.display="none";
 }}
