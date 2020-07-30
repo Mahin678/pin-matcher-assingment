@@ -37,7 +37,7 @@ function submitValue(number){
           document.getElementById("try").style.display="none";
          }
      else if ( getSubmitInput > 10000 ||  getSubmitInput < 1000 ){
-          document.getElementById("try-Left").innerText='Write Minimum 4 Number  ';
+          document.getElementById("try-Left").innerText='Write  4 Number  ';
           document.getElementById("submit-Btn").style.color="red";
           document.getElementById("try").style.display="none";
           document.getElementById("submit-Btn").disabled = true;    
