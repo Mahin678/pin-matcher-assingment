@@ -16,6 +16,7 @@ generateBtn.addEventListener("click", function(){
      document.getElementById("not-Match").style.display="none";
      document.getElementById("submit-Btn").style.display="inline";
      document.getElementById("clearBtn").style.color="white"; 
+     document.getElementById("clearBtn").style.backgroundColor= "#425062";
 })
 //number submit btn 
 function submitValue(number){
@@ -37,7 +38,7 @@ function submitValue(number){
           document.getElementById("try").style.display="none";
          }
      else if ( getSubmitInput > 10000 ||  getSubmitInput < 1000 ){
-          document.getElementById("try-Left").innerText='Write  4 Number  ';
+          document.getElementById("try-Left").innerText='Write  4 Number ( first number 0 is not acceptable ) ';
           document.getElementById("try").style.display="none";
           document.getElementById("submit-Btn").disabled = true;    
           document.getElementById("clearBtn").style.backgroundColor= "grey";
