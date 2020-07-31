@@ -16,6 +16,7 @@ generateBtn.addEventListener("click", function(){
      document.getElementById("not-Match").style.display="none";
      document.getElementById("submit-Btn").style.display="inline";
      document.getElementById("clearBtn").style.color="white"; 
+     document.getElementById("clearBtn").style.backgroundColor= "#425062";
 })
 //number submit btn 
 function submitValue(number){
